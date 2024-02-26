@@ -51,3 +51,5 @@ exclude:
   - "Gemfile.lock"
 projects:
   - BilkentCompGen/tardis
+  - BilkentCompGen/saber
+  - BilkentCompGen/GateKeeper
