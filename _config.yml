@@ -50,4 +50,4 @@ exclude:
   - "Gemfile"
   - "Gemfile.lock"
 projects:
-  - BilkentCompgen/tardis
+  - BilkentCompGen/tardis
