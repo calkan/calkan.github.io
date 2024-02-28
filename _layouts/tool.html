@@ -51,7 +51,7 @@ categories:
 			
 		{% endif %}
 		</div>
-		
+		{% if tool.repo %}		
 		<div class="bigspacer"></div>
 		<div class="smallhead">
 			Source code
@@ -61,26 +61,31 @@ categories:
 			<i class="fa fa-github-alt fa-fw"></i>
 			<a class="off" href="https://github.com/{{ tool.repo }}">{{ tool.repo }}</a>
 		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
+		{% if tool.docker %}
 		<div class="smallhead">
 			Docker Hub
 		</div>
 		<div class="pad-left note">
 			<div class="smallspacer"></div>
-			<i class="fab fa-docker fa-fw"></i>
+			<i class="fab fa-docker"></i>
 			<a class="off" href="https://hub.docker.com/r/{{ tool.docker }}">{{ tool.docker }}</a>
 		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
 		<div class="bigspacer"></div>
 		<div class="smallhead">
 			Contributors
 		</div>
 		<div class="pad-left note">
-			{% for contributor in tool.contributors %}
-			<div class="smallspacer"></div>
+		        {% assign contributor = tool.contributors %}
+<!--			<div class="smallspacer"></div>
 			<div>
 				<a class="off" href="{{ contributor.url }}">
-    			<img class="pull-left avatar" src="{{ contributor.avatar }}">
+    			<img class="pull-left avatar" src="{{ contributor.avatar }}"> -->
     			<div class="handlebox" style="padding-left:5px;"">
-    				{{ contributor.login }}
+    				{{ contributor }}
     			</div>
  				</a>
  			</div>
