@@ -25,7 +25,7 @@ categories:
   				{% endfor %}
   				{% if crumb == page.title %}
   				<li class="breadcrumb-item active">
-            {{ name }}
+	<img style="width: 220px;" class="pad-right media-object d-none d-sm-block" src="{{ tool.image }}">
           </li>
   				{% else %}
   				<li class="breadcrumb-item">
@@ -54,7 +54,7 @@ categories:
 		<div class="pad-left note">
 			<div class="smallspacer"></div>
 			<i class="fa fa-cog fa-fw"></i>
-			<a class="off" href="https://github.com/{{ tool.repo }}">github.com/{{ tool.repo | replace: "/", "/<wbr>" | replace: "_", "_<wbr>" }}</a>
+			<a class="off" href="https://github.com/{{ tool.repo }}">{{ tool.repo }}</a>
 		</div>
 		<div class="smallhead">
 			Docker Hub
@@ -62,7 +62,7 @@ categories:
 		<div class="pad-left note">
 			<div class="smallspacer"></div>
 			<i class="fa fa-cog fa-fw"></i>
-			<a class="off" href="https://hub.docker.com/{{ tool.docker }}">hub.docker.com/{{ tool.docker | replace: "/", "/<wbr>" | replace: "_", "_<wbr>" }}</a>
+			<a class="off" href="https://hub.docker.com/r/{{ tool.docker }}">{{ tool.docker }}</a>
 		</div>
 		<div class="bigspacer"></div>
 		<div class="smallhead">
