@@ -23,7 +23,7 @@ categories:
   				{% endfor %}
   				{% if crumb == page.title %}
   				<li class="breadcrumb-item active">
-	<img style="width: 220px;" class="pad-right media-object d-none d-sm-block" src="{{ tool.image }}">
+	<!-- <img style="width: 220px;" class="pad-right media-object d-none d-sm-block" src="{{ tool.image }}"> -->
           </li>
   				{% else %}
   				<li class="breadcrumb-item">
@@ -45,6 +45,13 @@ categories:
 
 <div class="row">
 	<div class="col-lg-3">
+	<div class="pad-left note">
+		{% if tool.image %}
+	<img style="width: 220px;" class="pad-right media-object d-none d-sm-block" src="{{ tool.image }}">
+			
+		{% endif %}
+		</div>
+		
 		<div class="bigspacer"></div>
 		<div class="smallhead">
 			Source code
