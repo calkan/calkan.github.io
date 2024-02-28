@@ -17,4 +17,4 @@ At the last step of short read mapping, the candidate locations of the reads on 
 
 # Citations
 
--  [**GateKeeper-GPU: Fast and Accurate Pre-Alignment Filtering in Short Read Mapping**](https://ieeexplore.ieee.org/document/10436437). Zülal Bingöl, Mohammed Alser, Onur Mutlu, Ozcan Ozturk, Can Alkan.  (2024) [**arXiv preprint**](https://arxiv.org/abs/2103.14978) / [**Extended Abstract: HiCOMB 2021**](https://ieeexplore.ieee.org/abstract/document/9460690)
+-  [**GateKeeper-GPU: Fast and Accurate Pre-Alignment Filtering in Short Read Mapping**](https://ieeexplore.ieee.org/document/10436437). Zülal Bingöl, Mohammed Alser, Onur Mutlu, Ozcan Ozturk, Can Alkan.  *IEEE Transactions on Computers*, epub Feb 14, 2024. [**arXiv preprint**](https://arxiv.org/abs/2103.14978) / [**Extended Abstract: HiCOMB 2021**](https://ieeexplore.ieee.org/abstract/document/9460690)
