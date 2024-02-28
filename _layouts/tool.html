@@ -4,11 +4,9 @@ categories:
  - tools
 ---
 
-{% for test in site.data.tools %}
-	{% if test.title == page.tool %}
-		{% assign tool = test %}
-	{% endif %}
-{% endfor %}
+
+
+{% assign tool = page %}
 
 <div class="row">
 	<div class="col-lg-12">
